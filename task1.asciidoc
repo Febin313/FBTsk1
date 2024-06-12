@@ -1,0 +1,99 @@
++*In[2]:*+
+[source, ipython3]
+----
+#creating a list
+list = [2,4,6,8,10]
+
+#adding an element to list
+list.append(6)
+
+#removing an element from list
+list.remove(4)
+
+#modifying an element in list
+list[0]=10
+
+print("updated list=",list)
+
+
+----
+
+
++*Out[2]:*+
+----
+updated list= [10, 6, 8, 10, 6]
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
+
+
++*In[6]:*+
+[source, ipython3]
+----
+#creating a tuple
+t = (2,4,6,8,10)
+
+#adding an element to tuple
+t1 = (55,13)
+t2 = t + t1
+
+#removing an element from tuple
+l= list(t2)
+l.remove(6)
+t2= tuple(l)
+
+#modifying an element in set
+l1=list(t2)
+l1[1]=7
+t3= tuple(l1)
+
+print("updated tuple=",t3)
+
+
+
+
+----
+
+
++*Out[6]:*+
+----
+updated tuple= (2, 7, 8, 10, 55, 13)
+----
+
+
++*In[6]:*+
+[source, ipython3]
+----
+#creating a dictionary
+dict = {'name': 'febin', 'age' : '20', 'city' : 'Istanbull'} 
+
+#adding an element to dictionary
+dict['gender']='male'
+
+#removing an element from dictionary
+del dict['age']
+
+#modifying an element in dictionary
+dict['city']='Banglore'
+
+print("updated dict=",dict)
+
+----
+
+
++*Out[6]:*+
+----
+updated dict= {'name': 'febin', 'city': 'Banglore', 'gender': 'male'}
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
